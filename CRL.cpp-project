@@ -1,0 +1,96 @@
+<Project name="CRL">
+	<Settings>
+		<Standard>c++11</Standard>
+		<Subsystem>windows</Subsystem>
+		<Warnings/>
+		<WarningsAsErrors>False</WarningsAsErrors>
+		<OptimizationLevel>0</OptimizationLevel>
+		<DebugInfo>False</DebugInfo>
+		<Multithreaded>False</Multithreaded>
+		<OutputFolder>output</OutputFolder>
+		<OutputFileName>{ProjectName}.exe</OutputFileName>
+		<IncludeDirectories>
+			<IncludeDirectory>c:\save\code\</IncludeDirectory>
+		</IncludeDirectories>
+		<Libraries/>
+	</Settings>
+	<Files>
+		<Folder name="WIN">
+			<File>WinUtility.h</File>
+			<File>CWinInstance.h</File>
+			<File>CWindowImpl.h</File>
+			<File>CWindow.h</File>
+			<File>CWaitCursor.h</File>
+			<File>CTreeViewEvents.h</File>
+			<File>CTreeView.h</File>
+			<File>CStatusBar.h</File>
+			<File>CSplitter.h</File>
+			<File>CPipe.h</File>
+			<File>CPen.h</File>
+			<File>CMessageMap.inl</File>
+			<File>CMessageMap.h</File>
+			<File>CMenu.h</File>
+			<File>CMDITab.h</File>
+			<File>CListView.h</File>
+			<File>CImageList.h</File>
+			<File>CHandle.h</File>
+			<File>CFont.h</File>
+			<File>CEdit.h</File>
+			<File>CDialogImpl.h</File>
+			<File>CCloseButton.h</File>
+			<File>CButtonEvents.h</File>
+			<File>CBrush.h</File>
+			<File>CComboBox.h</File>
+		</Folder>
+		<Folder name="STRING">
+			<File>StringUtility.h</File>
+		</Folder>
+		<Folder name="TIME">
+			<File>TimeUtility.h</File>
+			<File>CTime.h</File>
+			<File>CDateTime.h</File>
+			<File>CDate.h</File>
+		</Folder>
+		<Folder name="FSYS">
+			<File>FileUtility.h</File>
+		</Folder>
+		<Folder name="MATH">
+			<File>MathUtility.h</File>
+		</Folder>
+		<Folder name="TYPE">
+			<File>TypeUtility.h</File>
+		</Folder>
+		<Folder name="REG">
+			<File>RegUtility.h</File>
+			<File>CRegSettings.h</File>
+			<File>CRegKey.h</File>
+		</Folder>
+		<Folder name="PTR">
+			<File>PtrUtility.h</File>
+			<File>CSingleton.h</File>
+			<File>CScope.h</File>
+			<File>CThread.h</File>
+			<File>CLock.h</File>
+			<File>CEvent.h</File>
+			<File>CAutoPtr.h</File>
+		</Folder>
+		<Folder name="NET">
+			<File>InternetUtility.h</File>
+			<File>CInternetServer.h</File>
+			<File>CInternetRequest.h</File>
+			<File>CInternet.h</File>
+		</Folder>
+		<Folder name="ERR">
+			<File>ErrorUtility.h</File>
+			<File>CLog.h</File>
+			<File>CError.h</File>
+			<File>CCallTrace.h</File>
+			<File>CCallStack.h</File>
+		</Folder>
+		<Folder name="STREAM">
+			<File>CStream.h</File>
+		</Folder>
+		<File>main.cpp</File>
+	</Files>
+</Project>
+
