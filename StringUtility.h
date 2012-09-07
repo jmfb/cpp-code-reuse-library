@@ -88,6 +88,19 @@ namespace STRING
 		}
 	}
 
+	template <typename TContainer>
+	inline std::string join(const TContainer& container, const std::string& separator)
+	{
+		std::ostringstream out;
+		for (auto start = container.begin(), iter = container.begin(), end = container.end(); iter != end; ++iter)
+		{
+			if (iter != start)
+				out << separator;
+			out << *iter;
+		}
+		return out.str();
+	}
+
 	inline bool isident(char c)
 	{
 		return(::isalpha(c) || c == '_');
