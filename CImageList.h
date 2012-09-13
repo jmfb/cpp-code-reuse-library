@@ -41,19 +41,19 @@ public:
     ~CImageList()
     {
     }
-    
+
     operator HIMAGELIST() const
     {
         return(Get());
     }
-    
+
     void CreateSmallIconList()
     {
         mCX = ::GetSystemMetrics(SM_CXSMICON);
         mCY = ::GetSystemMetrics(SM_CYSMICON);
         Attach(::ImageList_Create(mCX, mCY, ILC_COLORDDB|ILC_MASK, 0, 64));
     }
-    
+
     int operator[](int id)
     {
         map_t::iterator iter = mIDtoIndex.find(id);
@@ -63,16 +63,16 @@ public:
         }
         return(iter->second);
     }
-    
+
     void Draw(HDC dc, int index, int x, int y, unsigned int style = ILD_NORMAL)
     {
         ::ImageList_Draw(Get(), index, dc, x, y, style);
     }
-    
+
 private:
     int mCX;
     int mCY;
-    
+
     typedef std::map<int, int> map_t;
     map_t mIDtoIndex;
 };
